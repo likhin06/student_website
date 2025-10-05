@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company</title>
+  <style>
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ✅ Navbar */
+    nav {
+      background: #333;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ff9800;
+    }
+
+    /* ✅ Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #2196f3, #21cbf3);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* ✅ Container */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* ✅ Cards */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #444;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    /* ✅ List Styling */
+    .list {
+      max-width: 800px;
+      margin: auto;
+      padding-left: 20px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* ✅ CTA */
+    .cta a {
+      display: inline-block;
+      background: #2196f3;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #1769aa;
+    }
+
+    /* ✅ Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="students/student1.html">Student 1</a></li>
+      <li><a href="students/student2.html">Student 2</a></li>
+      <li><a href="students/student3.html">Student 3</a></li>
+      <li><a href="gallery.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+    <h1>Our Company</h1>
+    <p>Providing training, innovation, and opportunities for students.</p>
+  </section>
+
+  <!-- ✅ About the Company -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Our company is dedicated to bridging the gap between education and industry. 
+      We focus on student empowerment by offering practical learning opportunities, 
+      skill development programs, and career guidance. With a strong network of 
+      mentors and industry professionals, we ensure every student is prepared 
+      for the future of work.
+    </p>
+  </div>
+
+  <!-- ✅ What We Do -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">What We Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Training</h3>
+        <p>We provide hands-on training programs to help students gain real-world skills.</p>
+      </div>
+      <div class="card">
+        <h3>Internships</h3>
+        <p>Our internship opportunities bridge the gap between education and industry.</p>
+      </div>
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Students work on live projects to showcase their talent and creativity.</p>
+      </div>
+      <div class="card">
+        <h3>Placements</h3>
+        <p>We connect students with top companies to kickstart their careers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Core Values -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Our Core Values</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Integrity</h3>
+        <p>We uphold honesty, transparency, and trust in everything we do.</p>
+      </div>
+      <div class="card">
+        <h3>Innovation</h3>
+        <p>We encourage creativity and foster new ideas for growth.</p>
+      </div>
+      <div class="card">
+        <h3>Excellence</h3>
+        <p>We are committed to delivering high-quality training and opportunities.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Why Choose Us -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Why Choose Us?</h2>
+    <ul class="list">
+      <li>✅ Industry-relevant training programs</li>
+      <li>✅ Real-world project experience</li>
+      <li>✅ 100% internship opportunities</li>
+      <li>✅ Strong placement support with partner companies</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Partners -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Our Partners</h2>
+    <div class="cards">
+      <div class="card"><h3>Company A</h3><p>Technology Partner</p></div>
+      <div class="card"><h3>Company B</h3><p>Training Partner</p></div>
+      <div class="card"><h3>Company C</h3><p>Recruitment Partner</p></div>
+    </div>
+  </div>
+
+  <!-- ✅ Call to Action -->
+  <div class="container cta" style="text-align:center; margin-top:40px;">
+    <h2>Work With Us</h2>
+    <p>
+      Whether you're a student looking to upskill or a company seeking talented interns, 
+      we’d love to collaborate with you.
+    </p>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Student Training Company | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

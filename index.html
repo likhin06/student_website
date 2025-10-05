@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Website - Home</title>
+  <style>
+    /* ✅ Reset some defaults */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      color: #333;
+      text-align: center;
+    }
+
+    /* ✅ Navbar */
+    nav {
+      background: #333;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #ff9800;
+    }
+
+    /* ✅ Heading */
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* ✅ Card style for content */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #2196f3;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="students/student1.html">Student 1</a></li>
+      <li><a href="students/student2.html">Student 2</a></li>
+      <li><a href="students/student3.html">Student 3</a></li>
+      <li><a href="gallery.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+
+    </ul>
+  </nav>
+
+  <!-- ✅ Page content -->
+  <h1>Welcome to Student Website 🎓</h1>
+  <p>Explore students, projects, and more using the navigation menu.</p>
+
+  <!-- ✅ Cards for quick links -->
+  <div class="card-container">
+    
+    <div class="card">
+      <h3>About Us</h3>
+      <p>Learn more about our student group.</p>
+      <a href="about.html">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h3>Our Company</h3>
+      <p>Discover our company details.</p>
+      <a href="company.html">View Details →</a>
+    </div>
+
+    <div class="card">
+      <h3>Student Profiles</h3>
+      <p>Meet individual students.</p>
+      <a href="students/student1.html">Check Profiles →</a>
+    </div>
+  </div>
+  <section class="testimonials">
+  <h2>What Our Students Say</h2>
+  
+  <div class="testimonial-cards">
+    <!-- Testimonial 1 -->
+    <article class="testimonial-card">
+      <p>"This website helped me showcase my projects in a professional way!"</p>
+      <h4>- Anjali, Student</h4>
+    </article>
+
+    <!-- Testimonial 2 -->
+    <article class="testimonial-card">
+      <p>"Our students are learning teamwork and real-world skills. Proud of their efforts!"</p>
+      <h4>- Mr. Pavan, Professor</h4>
+    </article>
+
+    <!-- Testimonial 3 -->
+    <article class="testimonial-card">
+      <p>"The platform gave me confidence during job interviews."</p>
+      <h4>- Rahul, Alumni</h4>
+    </article>
+  </div>
+</section>
+
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Student Website | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
